@@ -56,13 +56,13 @@ table 50100 "Radio Show"
     var
         myInt: Integer;
     begin
-asdfasdfdasf
+        read about it
     end;
 
     trigger OnRename()
     var
         myInt: Integer;
     begin
-asdfasdfasdf
+        read about it
     end;
 }

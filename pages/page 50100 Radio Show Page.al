@@ -36,9 +36,8 @@ page 50100 "Radio Show List"
                     var
                         myInt: Integer;
                     begin
-                        Message('On validate trigger');
+                        read about it;
                     end;
-
 
                 }
                 field("Host Name"; Rec."Host Name")
@@ -74,27 +73,27 @@ page 50100 "Radio Show List"
     var
         myInt: Integer;
     begin
-       Message('On open page trigger'); 
+       read about it 
     end;
 
     trigger OnModifyRecord(): Boolean
     var
         myInt: Integer;
     begin
-        Message('On modify page trigger'); 
+        read about it 
     end;
 
     trigger OnNewRecord()
     var
         myInt: Integer;
     begin
-        asdfasfs
+        read about it
     end;
 
     trigger OnAfterGetRecord()
     var
         myInt: Integer;
     begin
-        fasdfasdf
+        read about it
     end;
 }
