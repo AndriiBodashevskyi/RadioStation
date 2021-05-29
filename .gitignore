@@ -4,6 +4,7 @@
 .alcache
 .altemplates
 .snapshots
+.vscode
 debug.log
 rad.json
 app.json
