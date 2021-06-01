@@ -32,12 +32,12 @@ page 50100 "Radio Show List"
                 {
                     ApplicationArea = All;
 
-                    trigger OnValidate()
-                    var
-                        myInt: Integer;
-                    begin
-                        read about it;
-                    end;
+                    // trigger OnValidate()
+                    // var
+                    //     myInt: Integer;
+                    // begin
+                    //     read about it;
+                    // end;
 
                 }
                 field("Host Name"; Rec."Host Name")
@@ -69,31 +69,31 @@ page 50100 "Radio Show List"
         }
     }
 
-    trigger OnOpenPage()
-    var
-        myInt: Integer;
-    begin
-       read about it 
-    end;
+    // trigger OnOpenPage()
+    // var
+    //     myInt: Integer;
+    // begin
+    //    read about it 
+    // end;
 
-    trigger OnModifyRecord(): Boolean
-    var
-        myInt: Integer;
-    begin
-        read about it 
-    end;
+    // trigger OnModifyRecord(): Boolean
+    // var
+    //     myInt: Integer;
+    // begin
+    //     read about it 
+    // end;
 
-    trigger OnNewRecord()
-    var
-        myInt: Integer;
-    begin
-        read about it
-    end;
+    // trigger OnNewRecord()
+    // var
+    //     myInt: Integer;
+    // begin
+    //     read about it
+    // end;
 
-    trigger OnAfterGetRecord()
-    var
-        myInt: Integer;
-    begin
-        read about it
-    end;
+    // trigger OnAfterGetRecord()
+    // var
+    //     myInt: Integer;
+    // begin
+    //     read about it
+    // end;
 }

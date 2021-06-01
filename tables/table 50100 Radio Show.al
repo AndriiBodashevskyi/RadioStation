@@ -22,10 +22,41 @@ table 50100 "Radio Show"
         field(40; "Run Time"; Duration) { }
         field(50; "Host Code"; Code[20]) { }
         field(60; "Host Name"; Text[50]) { }
-        field(100; "Average Listeners"; Decimal) { }
-        field(110; "Audience Share"; Decimal) { }
-        field(120; "Advertising Revenue"; Decimal) { }
-        field(130; "Royalty Cost"; Decimal) { }
+        field(100; "Average Listeners"; Decimal) 
+        { 
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = average ("Listenership Entry"."Listener Count" // Ellipsis Button? ReverseSign Property?
+            where ("Radio Show No." = FIELD ("No."), Date = field ("Date Filter")));
+
+        }
+        field(110; "Audience Share"; Decimal) 
+        { 
+         
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = average ("Listenership Entry"."Audience Share" 
+            where ("Radio Show No." = FIELD ("No."), Date = field ("Date Filter")));
+
+        }
+        field(120; "Advertising Revenue"; Decimal) 
+        { 
+                     
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = sum ("Radio Show Entry"."Fee Amount"
+            where ("Radio Show No." = FIELD ("No."), 
+            "Data Format" = filter (Advertisement)));
+        }
+        field(130; "Royalty Cost"; Decimal) 
+        { 
+                                 
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = sum ("Radio Show Entry"."Fee Amount"
+            where (Date = FIELD ("Date Filter"), 
+            "Data Format" = filter (Vinyl | CD | MP3)));
+        }
         field(1000; "Frequency"; Option) { OptionMembers = Hourly,Daily,Weekly,Monthly; }
         field(1010; "PSA Planned Quantity"; Integer) { }
         field(1020; "Ads Planned Quantity"; Integer) { }
@@ -52,17 +83,17 @@ table 50100 "Radio Show"
 
     }
 
-    trigger OnModify()
-    var
-        myInt: Integer;
-    begin
-        read about it
-    end;
+    // trigger OnModify()
+    // var
+    //     myInt: Integer;
+    // begin
+    //     read about it
+    // end;
 
-    trigger OnRename()
-    var
-        myInt: Integer;
-    begin
-        read about it
-    end;
+    // trigger OnRename()
+    // var
+    //     myInt: Integer;
+    // begin
+    //     read about it
+    // end;
 }
