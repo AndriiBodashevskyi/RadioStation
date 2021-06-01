@@ -54,7 +54,7 @@ table 50100 "Radio Show"
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = sum ("Radio Show Entry"."Fee Amount"
-            where (Date = FIELD ("Date Filter"), 
+            where ("Radio Show No." = FIELD ("No."), Date = FIELD ("Date Filter"), 
             "Data Format" = filter (Vinyl | CD | MP3)));
         }
         field(1000; "Frequency"; Option) { OptionMembers = Hourly,Daily,Weekly,Monthly; }
