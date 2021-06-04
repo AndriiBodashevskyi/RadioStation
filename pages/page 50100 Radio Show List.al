@@ -69,6 +69,14 @@ page 50100 "Radio Show List"
                 }
             }
         }
+        area(FactBoxes)
+        {
+            part(Fans; "Radio Show Fan Factbox")
+            {
+                ApplicationArea = Basic;
+                SubPageLink = "Radio Show No." = field("No.");
+            }
+        }
     }
 
     // trigger OnOpenPage()

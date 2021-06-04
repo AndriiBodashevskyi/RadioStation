@@ -1,4 +1,4 @@
-page 50110 "Radio Show Fan FactboxListPart"
+page 50110 "Radio Show Fan Factbox"
 {
     PageType = ListPart;
     ApplicationArea = All;
@@ -7,9 +7,9 @@ page 50110 "Radio Show Fan FactboxListPart"
     
     layout
     {
-        area(Content)
+        area(content)
         {
-            group(GroupName)
+            repeater(General)
             {
                 field("E-Mail"; Rec."E-Mail")
                 {
@@ -28,6 +28,5 @@ page 50110 "Radio Show Fan FactboxListPart"
                 }
             }
         }
-    }
-    
+    }  
 }
