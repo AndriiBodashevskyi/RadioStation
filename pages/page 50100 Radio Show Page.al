@@ -5,6 +5,8 @@ page 50100 "Radio Show List"
     ApplicationArea = All;
     UsageCategory = Lists;
     Caption = 'Radio Shows';
+    CardPageId = 50101;
+    Editable = false;
 
     layout
     {

@@ -28,6 +28,11 @@ page 50101 "Radio Show Card"
                     ApplicationArea = All;
 
                 }
+                field(Frequency; Rec.Frequency)
+                {
+                    ApplicationArea = All;
+                }
+
                 field("Host Code"; Rec."Host Code")
                 {
                     ApplicationArea = All;
@@ -38,6 +43,47 @@ page 50101 "Radio Show Card"
                     ApplicationArea = All;
 
                 }
+            }
+            group(Requirements)
+            {
+                field("Sports Required"; Rec."Sports Required")
+                {
+                    ApplicationArea = All;
+                }
+                field("Sports Duration"; Rec."Sports Duration")
+                {
+                    ApplicationArea = All;
+                }
+                field("Weather Required"; Rec."Weather Required")
+                {
+                    ApplicationArea = All;
+                }
+                field("Weather Duration"; Rec."Weather Duration")
+                {
+                    ApplicationArea = All;
+                }
+                field("News Required"; Rec."News Required")
+                {
+                    ApplicationArea = All;
+                }
+                field("News Duration"; Rec."News Duration")
+                {
+                    ApplicationArea = All;
+                }
+                field("Ads Planned Quantity"; Rec."Ads Planned Quantity")
+                { 
+                    ApplicationArea = All;
+                }
+                
+
+                field("PSA Planned Quantity"; Rec."PSA Planned Quantity")
+                {
+                    ApplicationArea = All;
+                }
+                
+            }
+            group(Statistics)
+            {
                 field("Average Listeners"; Rec."Average Listeners")
                 {
                     ApplicationArea = All;
