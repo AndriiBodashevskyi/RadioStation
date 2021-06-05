@@ -34,7 +34,7 @@ page 50100 "Radio Show List"
                 {
                     ApplicationArea = All;
 
-                    // trigger OnValidate()
+                    //TODO: trigger OnValidate()
                     // var
                     //     myInt: Integer;
                     // begin
@@ -79,7 +79,7 @@ page 50100 "Radio Show List"
         }
     }
 
-    // trigger OnOpenPage()
+    //TODO: trigger OnOpenPage()
     // var
     //     myInt: Integer;
     // begin
