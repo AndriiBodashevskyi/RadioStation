@@ -19,7 +19,7 @@ query 50100 "Lot Avail. by Bin"
                 DataItemLink = "Location Code" = Item_Ledger_Entry."Location Code",
                 "Item No." = Item_Ledger_Entry."Item No.",
                 "Lot No." = Item_Ledger_Entry."Lot No.";
-                column(BinCode; "Bin Code")
+                column(Bin_Code; "Bin Code")
                 {
                 }
                 column(Sum_Quantity; Quantity)
