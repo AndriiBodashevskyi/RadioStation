@@ -7,7 +7,6 @@
 .vscode
 debug.log
 rad.json
-app.json
+# app.json
 launch.json
 settings.json
-app.json
