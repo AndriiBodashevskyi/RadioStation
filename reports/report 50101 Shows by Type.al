@@ -1,6 +1,9 @@
 report 50101 "Shows by Type"
 {
+    UsageCategory = ReportsAndAnalysis;
+    ApplicationArea = All;
     WordLayout = './reports/Shows by Type.docx';
+    DefaultLayout = Word;
     // EnableHyperlinks = true;
     
     dataset
