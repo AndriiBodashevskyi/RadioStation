@@ -12,4 +12,8 @@ table 50102 "Playlist Header"
         field(60; "End Time"; Time) { }
 
     }
+    keys
+    {
+        key(PK; "No.") { }
+    }
 }
