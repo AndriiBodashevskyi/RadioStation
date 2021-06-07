@@ -2,7 +2,7 @@ report 50100 "Radio Shows"
 {
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
-    WordLayout = 'RadioShows.docx';
+    WordLayout = './reports/RadioShows.docx';
     DefaultLayout = Word;
 
     dataset

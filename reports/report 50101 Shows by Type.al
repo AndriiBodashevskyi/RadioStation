@@ -1,6 +1,7 @@
 report 50101 "Shows by Type"
 {
-    WordLayout = './Shows by Type.docx';
+    WordLayout = './reports/Shows by Type.docx';
+    // EnableHyperlinks = true;
     
     dataset
     {
