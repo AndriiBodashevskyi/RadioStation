@@ -57,8 +57,27 @@ report 50101 "Shows by Type"
             }
         }
     }
+    requestpage
+    {
+        layout
+        {
+            area(Content)
+            {
+                group(Options)
+                {
+                    field(UserComment; UserComment)
+                    {
+                        ApplicationArea = Basic;
+                        Caption = 'User Comment';
+                    }
+                }
+            }
+        }
+    }
     labels
     {
         ReportTitle = 'Show Schedule by Type';
     }
+    var
+        UserComment: Text;
 }
