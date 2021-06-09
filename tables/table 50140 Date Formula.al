@@ -10,6 +10,9 @@ table 50140 "Date Formula"
         field(10; "Reference for Date Calculation"; Date)
         {
             trigger OnValidate()
+            //third option
+            var
+                DateFormulaManagment: Codeunit "Date Formula Managment";
             begin
                 // CalculateNewDate();
                 "Date Result" := DateFormulaManagment.CalculateNewDate("Date Formula to Test", "Reference for Date Calculation");
@@ -18,6 +21,9 @@ table 50140 "Date Formula"
         field(20; "Date Formula to Test"; DateFormula)
         {
             trigger OnValidate()
+            //third option
+            var
+                DateFormulaManagment: Codeunit "Date Formula Managment";
             begin
                 // CalculateNewDate();
                 "Date Result" := DateFormulaManagment.CalculateNewDate("Date Formula to Test", "Reference for Date Calculation");
@@ -30,8 +36,8 @@ table 50140 "Date Formula"
 
     }
     // second option
-    var
-       DateFormulaManagment: Codeunit "Date Formula Managment";
+    // var
+    //    DateFormulaManagment: Codeunit "Date Formula Managment";
 
 
 //     first option 
