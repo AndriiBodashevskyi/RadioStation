@@ -11,14 +11,16 @@ table 50140 "Date Formula"
         {
             trigger OnValidate()
             begin
-                CalculateNewDate();
+                // CalculateNewDate();
+                "Date Result" := DateFormulaManagment.CalculateNewDate("Date Formula to Test", "Reference for Date Calculation");
             end;
         }
         field(20; "Date Formula to Test"; DateFormula)
         {
             trigger OnValidate()
             begin
-                CalculateNewDate();
+                // CalculateNewDate();
+                "Date Result" := DateFormulaManagment.CalculateNewDate("Date Formula to Test", "Reference for Date Calculation");
             end;
         }
         field(30; "Date Result"; Date)
@@ -27,10 +29,16 @@ table 50140 "Date Formula"
         }
 
     }
-    local procedure CalculateNewDate()
+    // second option
     var
        DateFormulaManagment: Codeunit "Date Formula Managment";
-    begin
-        "Date Result" := DateFormulaManagment.CalculateNewDate("Date Formula to Test", "Reference for Date Calculation");
-    end;
+
+
+//     first option 
+//     local procedure CalculateNewDate()
+//     var
+//        DateFormulaManagment: Codeunit "Date Formula Managment";
+//     begin
+//         "Date Result" := DateFormulaManagment.CalculateNewDate("Date Formula to Test", "Reference for Date Calculation");
+//     end;
 }
