@@ -28,7 +28,9 @@ table 50140 "Date Formula"
 
     }
     local procedure CalculateNewDate()
+    var
+       DateFormulaManagment: Codeunit "Date Formula Managment";
     begin
-        "Date Result" := CalcDate("Date Formula to Test", "Reference for Date Calculation");
+        "Date Result" := DateFormulaManagment.CalculateNewDate("Date Formula to Test", "Reference for Date Calculation");
     end;
 }
