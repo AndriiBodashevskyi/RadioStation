@@ -12,7 +12,9 @@ page 50101 "Radio Show Card"
         {
             group(General)
             {
-                field("No."; Rec."No.") { ApplicationArea = All; }
+                field("No."; Rec."No.") 
+                { ApplicationArea = All; 
+                }
                 field("Radio Show Type"; Rec."Radio Show Type")
                 {
                     ApplicationArea = All;

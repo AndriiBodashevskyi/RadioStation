@@ -14,7 +14,10 @@ page 50100 "Radio Show List"
         {
             repeater(Group)
             {
-                field("No."; Rec."No.") { ApplicationArea = All; }
+                field("No."; Rec."No.") 
+                { ApplicationArea = All; 
+                
+                }
                 field("Radio Show Type"; Rec."Radio Show Type")
                 {
                     ApplicationArea = All;
@@ -33,14 +36,6 @@ page 50100 "Radio Show List"
                 field("Host Code"; Rec."Host Code")
                 {
                     ApplicationArea = All;
-
-                    //TODO: trigger OnValidate()
-                    // var
-                    //     myInt: Integer;
-                    // begin
-                    //     read about it;
-                    // end;
-
                 }
                 field("Host Name"; Rec."Host Name")
                 {
@@ -78,32 +73,4 @@ page 50100 "Radio Show List"
             }
         }
     }
-
-    //TODO: trigger OnOpenPage()
-    // var
-    //     myInt: Integer;
-    // begin
-    //    read about it 
-    // end;
-
-    // trigger OnModifyRecord(): Boolean
-    // var
-    //     myInt: Integer;
-    // begin
-    //     read about it 
-    // end;
-
-    // trigger OnNewRecord()
-    // var
-    //     myInt: Integer;
-    // begin
-    //     read about it
-    // end;
-
-    // trigger OnAfterGetRecord()
-    // var
-    //     myInt: Integer;
-    // begin
-    //     read about it
-    // end;
 }

@@ -1,4 +1,4 @@
-report 50101 "Shows by Type"
+report 50101 "BCAcademy Shows by Type"
 {
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
@@ -69,6 +69,7 @@ report 50101 "Shows by Type"
                     {
                         ApplicationArea = Basic;
                         Caption = 'User Comment';
+                        ToolTip = 'pass';
                     }
                 }
             }

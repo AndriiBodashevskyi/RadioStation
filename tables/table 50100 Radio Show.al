@@ -26,7 +26,7 @@ table 50100 "Radio Show"
         { 
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = average ("Listenership Entry"."Listener Count" // TODO:Ellipsis Button? ReverseSign Property?
+            CalcFormula = average ("Listenership Entry"."Listener Count"
             where ("Radio Show No." = FIELD ("No."), Date = field ("Date Filter")));
 
         }
@@ -83,18 +83,4 @@ table 50100 "Radio Show"
         fieldgroup(Brick; "No.", Name, "Audience Share") { }
 
     }
-
-    // TODO: trigger OnModify()
-    // var
-    //     myInt: Integer;
-    // begin
-    //     read about it
-    // end;
-
-    // trigger OnRename()
-    // var
-    //     myInt: Integer;
-    // begin
-    //     read about it
-    // end;
 }
