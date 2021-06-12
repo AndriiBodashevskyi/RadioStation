@@ -1,4 +1,4 @@
-report 50101 "BCAcademy Shows by Type"
+report 50101 "Shows by Type"
 {
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
